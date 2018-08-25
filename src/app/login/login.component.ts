@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
   async login() {
     this.result = await this.account.requestToken(this.username, this.password);
     if(this.result) {
-      this.route.navigate(['/dashboard'])
+      this.route.navigate(['/'])
     }
   }
 

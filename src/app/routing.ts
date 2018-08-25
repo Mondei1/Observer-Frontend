@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, Router } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GuardService } from './guard.service';
 
 const routes: Routes = [
     { path: 'login', component: LoginComponent },
-    { path: 'dashboard', component: DashboardComponent }
+    { path: '', component: DashboardComponent, canActivate: [GuardService] }
 ]
 
 @NgModule({

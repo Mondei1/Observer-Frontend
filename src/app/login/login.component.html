@@ -1,7 +1,13 @@
-<h1>Login</h1>
-<p>Log in to Observer. <br>Note that you need to log in with a user account, not with a client account.</p>
-<input [(ngModel)]="username" placeholder="Username" type="text"><br><br>
-<input [(ngModel)]="password" placeholder="Password" type="password"><br><br>
-<button (click)="login()">Login</button><br>
-<p *ngIf="this.result == false" style="color: red">You login credentials are wrong!</p>
-<p>Username: {{ username }}, Password: {{ password }}</p>
+<div class="logo">
+    <img src="assets/logo.svg">
+    <p>OBSERVER</p>
+    <p class="slogan">Observe. Detect. Act.</p>
+</div>
+<div class="loginbox">
+    <h1>Login</h1>
+    <p>Please login into Observer to confirm your identity.</p>
+    <input [(ngModel)]="username" placeholder="Username" type="text"><br><br>
+    <input [(ngModel)]="password" placeholder="Password" type="password"><br><br>
+    <button (click)="login()">Login</button><br>
+    <p *ngIf="this.result == false" style="color: red">You login credentials are wrong!</p>
+</div>

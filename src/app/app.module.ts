@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { AccountService } from './account.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SocketService } from './socket.service';
+import { GuardService } from './guard.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { SocketService } from './socket.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [SocketService, AccountService],
+  providers: [SocketService, AccountService, GuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

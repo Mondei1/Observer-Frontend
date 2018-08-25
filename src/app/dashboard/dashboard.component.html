@@ -1,14 +1,20 @@
-<ul>
-    <li><a>Dashboard</a></li>
-    <li><a>Servers</a></li>
-    <li><a>Players</a></li>
-    <li><a>Permissions</a></li>
-</ul>
-<p>Online players: {{ this.socket.data.online_players.length }}</p>
-<p>Total players: {{ this.socket.data.total_players.length }}</p>
-<p>Sockets: {{ this.socket.data.sockets.length }}</p>
-<button (click)="initShutdown()">Global shutdown</button>
-<p>Started: {{ started }}</p><br>
-
-<!-- Globle message -->
-<input [(ngModel)]="message" placeholder="Your message" type="text"><button (click)="sendMessage()">Send</button>
+<div class="dashboard">
+    <ul>
+        <li><a>Dashboard</a></li>
+        <li><a>Servers</a></li>
+        <li><a>Players</a></li>
+        <li><a>Permissions</a></li>
+        <li><a class="right">Observer by Mondei1</a></li>
+    </ul>
+    <div class="container">
+        <h2></h2>
+    </div>
+    <p>Online players: {{ this.socket.data.online_players.length }}</p>
+    <p>Total players: {{ this.socket.data.total_players.length }}</p>
+    <p>Sockets: {{ this.socket.data.sockets.length }}</p>
+    <button (click)="initShutdown()">Global shutdown</button>
+    <p>Started: {{ started }}</p><br>
+    
+    <!-- Globle message -->
+    <input [(ngModel)]="message" placeholder="Your message" type="text"><button (click)="sendMessage()">Send</button>
+</div>

@@ -7,7 +7,7 @@ import { SocketService } from './socket.service';
 export class AccountService {
 
   // Local storage
-  public isLoggedIn: boolean;
+  public isLoggedIn: boolean = false;
   public token: string;
   public decodedToken: any;
 
