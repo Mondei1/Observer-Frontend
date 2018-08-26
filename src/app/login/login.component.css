@@ -1,9 +1,10 @@
 .login {
     z-index: 0;
     position: absolute;
+
     height: 100%;
     width: 100%;
-    background-image: url('assets/loginBG_old.jpg')
+    background-image: url('assets/loginBG_old.jpg');
 }
 .loginbox {
     z-index: 1;
