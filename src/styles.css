@@ -10,42 +10,6 @@ h1, h2, h3, h4, h5, small {
 }
 
 p {
-    font-family: 'Source Sans Pro'
-}
-
-/* Credit authers */
-span {
-    background:#F8F8F8;
-    border: 5px solid #DFDFDF;
-    color: #717171;
-    font-size: 13px;
-    height: 30px;
-    letter-spacing: 1px;
-    line-height: 30px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    top: -80px;
-    left:-30px;
-    display:none;
-    padding:0 20px;
-    
-}
-span:after {
-    content:'';
-    position:absolute;
-    bottom:-10px; 
-    width:10px;
-    height:10px;
-    border-bottom:5px solid #dfdfdf;
-    border-right:5px solid #dfdfdf;
-    background:#f8f8f8;
-    left:50%;
-    margin-left:-10px;
-    -moz-transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    transform:rotate(45deg);
-}
-span:hover {
-    display: block;
+    font-family: 'Raleway';
+    font-weight: 500;
 }
